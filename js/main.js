@@ -22,3 +22,11 @@ fetch('partials/clients_say.html')
 .then(data => {
     document.querySelector("#clients-say-container").innerHTML = data;
 });
+
+fetch('partials/purposes.html')
+.then(response => {
+    return response.text()
+})
+.then(data => {
+    document.querySelector("#purposes-container").innerHTML = data;
+});
